@@ -1,5 +1,6 @@
 //Variables
 let img = document.getElementById("img");
+document.body.appendChild(img);
 
 //fetch
 const headers = new Headers({
@@ -14,16 +15,16 @@ let requestOptions = {
 };
 
  
+ async function newDog() {
   fetch("https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.log("error", error));
+ } 
    
  
  
 //event listener
-img.addEventListener("click", (e) => {
-  
-});
+img.addEventListener("click", newDog);
 
-
+newDog();

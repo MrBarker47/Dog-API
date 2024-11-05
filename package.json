@@ -1,12 +1,15 @@
 {
-  "name": "dog-api",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "id": "BkIEhN3pG",
+  "url": "",
+  "width": 912,
+  "height": 1024,
+  "mime_type": "image/jpeg",
+  "breeds": [
+    {
+      "id": 10,
+      "name": "American Bulldog"
+    }
+  ],
+  "categories": [],
+  "breed_ids": "10"
 }
