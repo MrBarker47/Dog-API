@@ -3,7 +3,9 @@ let url = "https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&fo
 
 //Variables
 let img = document.getElementById("img");
-document.body.appendChild(img);
+let main = document.getElementById("card");
+let button = document.getElementById("button");
+
 
 //fetch
 const headers = new Headers({
@@ -17,17 +19,17 @@ let requestOptions = {
   redirect: "follow",
 };
 
- 
- async function newDog() {
-  fetch(url,requestOptions)
-  .then((response) => response.text())
-  .then((result) => console.log(result))
-  .catch((error) => console.log("error", error));
- } 
-   
- 
- 
-//event listener
-img.addEventListener("click", newDog);
+async function newDog() {
+  fetch(url)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error))
+};
 
-newDog();
+//event listener
+button.addEventListener("click", (e) => {
+ 
+  newDog();
+})
+
+
