@@ -1,3 +1,6 @@
+//DOG API URL 
+let url = "https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1"
+
 //Variables
 let img = document.getElementById("img");
 document.body.appendChild(img);
@@ -16,7 +19,7 @@ let requestOptions = {
 
  
  async function newDog() {
-  fetch("https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",requestOptions)
+  fetch(url,requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.log("error", error));

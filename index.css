@@ -6,7 +6,9 @@
 
 
 #main-container {
-    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -16,6 +18,11 @@ text-align: center;
 
 img {
     border: solid 50px rgba(228, 159, 63, 0.644);
-    margin-left: 590px; 
+    margin-left: 597px; 
+    margin-top: 20px;
 
+}
+
+button {
+ margin-top: 200px;
 }
