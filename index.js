@@ -26,9 +26,11 @@ async function newDog() {
   .catch(error => console.log('error', error))
 };
 
+/* Having issues with the image poping up, it shows in the console.log that's it.
+*/
 //event listener
 button.addEventListener("click", (e) => {
- 
+ img.src = "";
   newDog();
 })
 

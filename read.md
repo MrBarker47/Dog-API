@@ -1,0 +1,2 @@
+# Read Me
+This application, is a dog api. Where there's a button you click and you're able to change the image of the dogs. As of right now there's issue with image not coming up. If you look in the console.log, you'll see the informations of the images.
